@@ -5,7 +5,6 @@
 its unstable repo fork on ur own risks
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/hyper-ub/saber)
 
 
 A modular telegram Python bot running on python3 with an sqlalchemy database.
@@ -195,7 +194,6 @@ For queries or any issues regarding the bot please open an issue ticket or visit
 For starters click on this button
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/hyper-ub/saber)
 
 Fill in all the details , Deploy.
 Now go to https://dashboard.heroku.com/apps/(app-name)/resources ( Replace (app-name) with your app name )
