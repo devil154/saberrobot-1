@@ -190,16 +190,6 @@ Make sure to edit the start and restart bats to your needs.
 Note: the restart bat requires that User account control be disabled.
 
 For queries or any issues regarding the bot please open an issue ticket or visit us at [Fate Union](https://t.me/fateion)
-## How to setup on Heroku 
-For starters click on this button
-
-
-
-Fill in all the details , Deploy.
-Now go to https://dashboard.heroku.com/apps/(app-name)/resources ( Replace (app-name) with your app name )
-Turn on worker dyno (Don't worry It's free :D)
-Now send the bot /start , If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.  
-</details>  
 
 ## Credits
 The bot is based of on the original work done by [PaulSonOfLars](https://github.com/PaulSonOfLars)
