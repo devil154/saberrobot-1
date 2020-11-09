@@ -1,7 +1,6 @@
 ![cruel](https://telegra.ph/file/a306066dac39e1ec64663.jpg)
 # saber bot
 
-its original fork from phantom bot
 
 its unstable repo fork on ur own risks
 
