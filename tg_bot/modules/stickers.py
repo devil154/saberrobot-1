@@ -24,7 +24,7 @@ def kang(bot: Bot, update: Update, args: List[str]) -> str:
     user = update.effective_user  # type: Optional[User]
     chat = update.effective_chat
     packnum = 0
-    packname = "a" + str(user.id) + "_by_" + context.bot.username
+    packname = "a" + str(user.id) + "_by_" + bot.username
     packname_found = 0
     max_stickers = 120
     while packname_found == 0:
@@ -155,7 +155,7 @@ def kang(bot: Bot, update: Update, args: List[str]) -> str:
                 print(e)
 
         else:
-            packname = "animated" + str(user.id) + "_by_" + context.bot.username
+            packname = "animated" + str(user.id) + "_by_" + bot.username
             packname_found = 0
             max_stickers = 50
             while packname_found == 0:
