@@ -20,7 +20,7 @@ def typing_action(func):
             chat_id=update.effective_chat.id, action=ChatAction.TYPING
         )
         
-        return func(*args, **kwargs)
+        return func(bot, update, *args, **kwargs)
         
 
     return command_func
