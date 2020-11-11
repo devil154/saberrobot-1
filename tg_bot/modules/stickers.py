@@ -62,7 +62,7 @@ def kang(bot: Bot, update: Update, args: List[str]) -> str:
         else:
             msg.reply_text("Yea, I can't kang that.")
 
-        kang_file = context.bot.get_file(file_id)
+        kang_file = bot.get_file(file_id)
         if not is_animated:
             kang_file.download("kangsticker.png")
         else:
@@ -129,7 +129,7 @@ def kang(bot: Bot, update: Update, args: List[str]) -> str:
                     )
                 elif e.message == "Sticker_png_dimensions":
                     im.save(kangsticker, "PNG")
-                    context.bot.add_sticker_to_set(
+                    bot.add_sticker_to_set(
                         user_id=user.id,
                         name=packname,
                         png_sticker=open("kangsticker.png", "rb"),
