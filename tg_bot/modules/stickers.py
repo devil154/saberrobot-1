@@ -302,7 +302,7 @@ def kang(bot: Bot, update: Update, args: List[str]) -> str:
     else:
         packs = "Please reply to a sticker, or image to kang it!\nOh, by the way. here are your packs:\n"
         if packnum > 0:
-            firstpackname = "a" + str(user.id) + "_by_" + context.bot.username
+            firstpackname = "a" + str(user.id) + "_by_" + bot.username
             for i in range(0, packnum + 1):
                 if i == 0:
                     packs += f"[pack](t.me/addstickers/{firstpackname})\n"
@@ -365,7 +365,7 @@ def makepack_internal(
                     [
                         [
                             InlineKeyboardButton(
-                                text="Start", url=f"t.me/{context.bot.username}"
+                                text="Start", url=f"t.me/{bot.username}"
                             )
                         ]
                     ]
