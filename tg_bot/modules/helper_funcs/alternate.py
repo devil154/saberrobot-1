@@ -19,7 +19,9 @@ def typing_action(func):
         bot.send_chat_action(
             chat_id=update.effective_chat.id, action=ChatAction.TYPING
         )
-        return func(bot: Bot, update: Update, *args, **kwargs)
+        
+        return func(update, *args, **kwargs)
+        
 
     return command_func
 
@@ -33,7 +35,7 @@ def send_action(action):
             bot.send_chat_action(
                 chat_id=update.effective_chat.id, action=action
             )
-            return func(bot: Bot, update: Update, *args, **kwargs)
+            return func(update, *args, **kwargs)
 
         return command_func
 
