@@ -1,7 +1,10 @@
 import importlib
 import re
 from typing import Optional, List
-
+import json
+import requests
+from parsel import Selector
+from urllib.request import urlopen
 from telegram import Message, Chat, Update, Bot, User
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.error import Unauthorized, BadRequest, TimedOut, NetworkError, ChatMigrated, TelegramError
