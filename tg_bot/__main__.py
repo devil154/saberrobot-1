@@ -26,7 +26,7 @@ hoi {}, my name is {}! I am group manager bot
 I help u to maintain ur group
 
 My support group @fateunion
-This is my [source code](https://github.com/TGExplore/Marie-2.0-English),
+This is my [source code](https://github.com/hyper-ub/saberrobot),
 
 For more commands click /help...
 
